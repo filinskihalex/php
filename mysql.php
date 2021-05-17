@@ -2,10 +2,10 @@
     
     
     $host = '176.53.162.84';
-    $user = 'filinskih';
+    $user = '';
     $dbname = 'test';
     $port = '5432';
-    $pwd = '!1711';
+    $pwd = '';
     $dbconnect = pg_connect ("host = $host port=$port dbname=$dbname user=$user password=$pwd ");
 
     if (!$dbconnect) {
