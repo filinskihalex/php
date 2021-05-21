@@ -52,7 +52,14 @@
                 имя коммутатора <?php echo $name  ?>  размещение <?php echo $location?>
             </p>
             <p>
-                год <?php echo $location  ?>
+                год <?php while ($row = pg_fetch_assoc($result)) {
+                $name = $row['name'];
+                $location = $row['location'];
+                $ip = $row['ip'];
+                $mask = $row['mask'];
+                // echo $row['first_name']."<span>--</span>".$row['last_name'].$row['age']."<br/>"; -->
+                Echo $name, $location,$ip,$mask."<br/>";
+            }  ?>
             </p>    
 
             <p></p>
